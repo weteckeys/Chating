@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-button size="small" fill="clear" (click)="goToBack()" slot="start">
+          <ion-icon name="chevron-back"></ion-icon>
+          Back
+      </ion-button>
+      <ion-title>Privacy</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+      <ion-label class="title_lbl">Change Privacy</ion-label>
+      <ion-label class="sub_title">Who can see your profile information</ion-label>
+
+        <ion-label class="small_lbl">Last Seen</ion-label>
+        <ion-select value="everyone">
+            <ion-select-option value="everyone">Every one</ion-select-option>
+            <ion-select-option value="friends">Friends</ion-select-option>
+        </ion-select>
+        
+        <ion-label class="small_lbl">Profile Picture</ion-label>
+        <ion-select value="everyone">
+            <ion-select-option value="everyone">Every one</ion-select-option>
+            <ion-select-option value="friends">Friends</ion-select-option>
+        </ion-select>
+
+        <ion-label class="small_lbl">Bio</ion-label>
+        <ion-select value="everyone">
+            <ion-select-option value="everyone">Every one</ion-select-option>
+            <ion-select-option value="friends">Friends</ion-select-option>
+        </ion-select>
+
+        <ion-label class="small_lbl">Story</ion-label>
+        <ion-select value="everyone">
+            <ion-select-option value="everyone">Every one</ion-select-option>
+            <ion-select-option value="friends">Friends</ion-select-option>
+            <ion-select-option value="selected">Selected</ion-select-option>
+        </ion-select>
+
+    </div>
+</ion-content>

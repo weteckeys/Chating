@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-button size="small" fill="clear" (click)="goToBack()" slot="start">
+            <ion-icon name="chevron-back"></ion-icon>
+            Back
+        </ion-button>
+        <ion-title>My Profile</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        <div class="user_cover" [style.backgroundImage]="'url(assets/imgs/2.jpg)'">
+            <div class="round_div">
+                <div class="user_img" [style.backgroundImage]="'url(assets/imgs/user1.jpg)'"></div>
+            </div>
+        </div>
+        <div class="user_detail">
+            <div class="header_flex">
+                <ion-label>Basic Info</ion-label>
+                <ion-button shape="round" size="small">
+                    EDIT
+                </ion-button>
+            </div>
+
+            <div class="user_flex">
+                <div class="round_div">
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+                <div>
+                    <ion-label>Name</ion-label>
+                    <ion-input type="text" value="Mausam Chavda" placeholder="Name"></ion-input>
+                </div>
+            </div>
+
+            <div class="user_flex">
+                <div class="round_div">
+                  <ion-icon name="calendar-clear-outline"></ion-icon>
+                </div>
+                <div>
+                    <ion-label>Date of Birth</ion-label>
+                    <ion-input type="text" value="21 June 1997" placeholder="Birth Date"></ion-input>
+                </div>
+            </div>
+
+            <div class="user_flex">
+                <div class="round_div">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                <div>
+                    <ion-label>Email ID</ion-label>
+                    <ion-input type="text" value="mausam@gmail.com" placeholder="Email ID"></ion-input>
+                </div>
+            </div>
+
+            <div class="user_flex">
+                <div class="round_div">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+                <div>
+                    <ion-label>Phone Number</ion-label>
+                    <ion-input type="text" value="9876543212" placeholder="Phone Number"></ion-input>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+</ion-content>

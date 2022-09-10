@@ -1,0 +1,62 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="header_div">
+
+            <div class="first_div">
+                <ion-icon name="chevron-back" class="back_icn" (click)="goToBack()"></ion-icon>
+                <div class="back_image bg_image" [style.backgroundImage]="'url(assets/imgs/user1.jpg)'">
+                    <div class="online"></div>
+                </div>
+                <ion-label class="username">Jonh Doe</ion-label>
+            </div>
+
+            <div class="sec_div">
+                <ion-button size="small" fill="clear">
+                  <ion-icon name="call-sharp"></ion-icon>
+                </ion-button>
+                <ion-button size="small" fill="clear">
+                    <ion-icon name="search"></ion-icon>
+                </ion-button>
+            </div>
+
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+
+        <span *ngFor="let item of messages">
+            <div class="left_div" *ngIf="item.side == 'left'">
+                <div class="inner_div">
+                  <div class="msg_div">
+                      <ion-label>{{item.msg}}</ion-label>
+                      <div class="tri_left"></div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="right_div" *ngIf="item.side == 'right'">
+                <div class="inner_div">
+                    <div class="msg_div">
+                        <ion-label>{{item.msg}}</ion-label>
+                        <div class="tri_right"></div>
+                    </div>
+                </div>
+            </div>
+        </span>
+
+    </div>
+</ion-content>
+
+<ion-footer>
+    <div class="footer_div">
+        <ion-input type="text" placeholder="Type a message..">
+            <ion-icon name="mic" class="mic"></ion-icon>
+            <ion-icon name="add" class="add"></ion-icon>
+        </ion-input>
+        
+        <ion-icon name="send-sharp" class="send_btn"></ion-icon>
+        
+    </div>
+</ion-footer>

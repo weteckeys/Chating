@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-button size="small" fill="clear" (click)="goToCreatePost()" slot="start">
+            <ion-icon name="camera" style="font-size: 23px;"></ion-icon>
+        </ion-button>
+        <ion-title>Feed</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="user_flex">
+            <div class="user_back" (click)="openComment()" [style.backgroundImage]="'url('+ item +')'"
+                *ngFor="let item of users"></div>
+        </div>
+
+        <div class="text_slider">
+            <ion-label *ngFor="let item of tags; let i = index" [class.active]="tagID == i" (click)="changeTag(i)">
+                {{item}}
+            </ion-label>
+        </div>
+
+        <div class="content_div">
+
+            <div class="card_div" *ngFor="let item of posts">
+                <div class="user_detail">
+                    <div class="user_back" [style.backgroundImage]="'url('+ item.user +')'"></div>
+                    <div class="user_detail_info">
+                        <ion-label class="bold_lbl">Jonh Doe</ion-label>
+                        <ion-label class="grey_lbl">12 min ago</ion-label>
+                    </div>
+                    <div class="abs_div">
+                        <ion-icon name="heart"></ion-icon>
+                        <ion-label>1.2k</ion-label>
+                    </div>
+                </div>
+                <div class="user_post" [style.backgroundImage]="'url('+ item.img +')'"></div>
+                <div class="user_text">
+                    <ion-label class="text_info">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.</ion-label>
+                    <div class="comments_counter">
+                        <div class="inner_flex">
+                            <ion-icon name="heart" style="color: red;"></ion-icon>
+                            <ion-label>120</ion-label>
+                        </div>
+                        <div class="inner_flex" (click)="openComment()">
+                            <ion-icon name="chatbox" style="color: grey;"></ion-icon>
+                            <ion-label>70</ion-label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</ion-content>

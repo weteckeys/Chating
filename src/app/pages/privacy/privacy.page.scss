@@ -1,0 +1,33 @@
+.main_content_div {
+    width: 100%;
+    padding: 16px;
+
+    ion-label {
+        display: block;
+    }
+    
+    .title_lbl {
+        font-size: 20px;
+        font-family: 'semi-bold';
+    }
+    .sub_title {
+        font-size: 14px;
+        color: grey;
+        margin-bottom: 20px;
+    }
+
+    .small_lbl {
+        font-size: 14px;
+        color: grey;
+    }
+
+    ion-select {
+        margin-bottom: 16px;
+        padding-left: 0px;
+        --padding-top : 0px;
+        --padding-bottom : 0px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid lightgray;
+    }
+    
+}

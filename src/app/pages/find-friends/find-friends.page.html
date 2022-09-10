@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-button size="small" fill="clear" slot="start">
+            <ion-icon name="chevron-back"></ion-icon>
+            Back
+        </ion-button>
+        <ion-button fill="clear" size="small" slot="end">
+            Skip
+        </ion-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+
+        <div>
+            <div class="back_image" [style.backgroundImage]="'url(assets/imgs/1.jpg)'"></div>
+            <ion-label class="bold_lbl">Find Friends</ion-label>
+            <ion-label class="small_lbl">Tell your friends about the app so that they'll see your messages faster.</ion-label>
+            <div class="user_flex">
+                <div class="user_back" [style.backgroundImage]="'url(assets/imgs/1.jpg)'" *ngFor="let i of [1,2,3,4,5]"></div>
+            </div>
+            <ion-label class="small_lbl">20 of yput friends are already join us.</ion-label>
+        </div>
+
+        <div style="width: 100%">
+            <ion-button expand="block" shape="round">
+                Add from Contact
+            </ion-button>
+
+            <ion-button expand="block" class="fb_btn" shape="round">
+                <img src="assets/imgs/facebook.png" style="width: 17px;margin-right: 5px;">
+                Continue with facebook
+            </ion-button>
+        </div>
+
+    </div>
+</ion-content>

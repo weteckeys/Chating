@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-button size="small" fill="clear" (click)="goToBack()" slot="start">
+          <ion-icon name="chevron-back"></ion-icon>
+          Back
+      </ion-button>
+      <ion-title>Notifications</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        <div class="flex_header">
+            <ion-label>New Notifications</ion-label>
+        </div>
+
+        <div style="margin-bottom: 25px">
+            <div class="user_div" *ngFor="let item of users">
+                <div class="user_back" [style.backgroundImage]="'url('+ item.img +')'"></div>
+                <ion-label class="grey_lbl"><span>Jack Owen</span> {{item.detail}}</ion-label>
+                <ion-button size="small" fill="clear">
+                    <ion-icon name="ellipsis-vertical-sharp"></ion-icon>
+                </ion-button>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <div class="flex_header">
+                <ion-label>Earlier Notifications</ion-label>
+            </div>
+            <div class="user_div" *ngFor="let item of users">
+                <div class="user_back" [style.backgroundImage]="'url('+ item.img +')'"></div>
+                <ion-label class="grey_lbl"><span>Jack Owen</span> {{item.detail}}</ion-label>
+                <ion-button size="small" fill="clear">
+                    <ion-icon name="ellipsis-vertical-sharp"></ion-icon>
+                </ion-button>
+            </div>
+        </div>
+
+    </div>
+</ion-content>

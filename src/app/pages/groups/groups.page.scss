@@ -1,0 +1,49 @@
+.main_content_div {
+    padding: 16px;
+
+    ion-label {
+        display: block;
+    }
+
+    .main_div {
+        border-radius: 5px;
+        background: linear-gradient(to top, var(--ion-color-primary), #F6B5AC);
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .icn_div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            width: 100%;
+
+            ion-icon {
+                color: white;
+            }
+        }
+        .user_back {
+            height: 70px;
+            width: 70px;
+            border-radius: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-bottom: 16px;
+        }
+
+        .bold_lbl {
+            font-family: 'semi-bold';
+            color: white;
+            font-size: 15px;
+            text-align: center;
+        }
+        .small_lbl {
+            font-size: 13px;
+            color: white;
+            text-align: center;
+        }
+    }
+}

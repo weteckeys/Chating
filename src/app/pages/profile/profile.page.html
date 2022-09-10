@@ -1,0 +1,47 @@
+<ion-content>
+    <div class="main_content_div">
+        
+        <div class="user_cover" [style.backgroundImage]="'url(assets/imgs/2.jpg)'">
+            <div class="icn_div">
+              <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </div>
+            <div class="user_div">
+                <div class="user_back" [style.backgroundImage]="'url(assets/imgs/user1.jpg)'"></div>
+                <div class="user_detail">
+                    <ion-label class="name_lbl">Miranda West</ion-label>
+                    <ion-label class="loc_lbl">New York, USA</ion-label>
+                    <div class="user_flex">
+                        <div class="detail_div">
+                            <ion-label class="bold_lbl">1150</ion-label>
+                            <ion-label class="small_lbl">Followers</ion-label>
+                        </div>
+                        <div class="detail_div">
+                            <ion-label class="bold_lbl">350</ion-label>
+                            <ion-label class="small_lbl">Followings</ion-label>
+                        </div>
+                        <div class="detail_div">
+                            <ion-label class="bold_lbl">952</ion-label>
+                            <ion-label class="small_lbl">Posts</ion-label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_div">
+            <div class="card_div" *ngFor="let item of posts">    
+              <div class="user_detail">
+                  <div class="user_back" [style.backgroundImage]="'url(assets/imgs/user1.jpg)'"></div>
+                  <div class="user_detail_info">
+                      <ion-label class="bold_lbl">Jonh Doe</ion-label>
+                      <ion-label class="grey_lbl">Last online, 3 min ago</ion-label>
+                  </div>
+
+                  <ion-icon class="abs_icn" name="ellipsis-horizontal"></ion-icon>
+              </div>
+              <div class="user_post" [style.backgroundImage]="'url('+ item.img +')'"></div>
+            </div>
+        </div>
+
+    </div>
+</ion-content>

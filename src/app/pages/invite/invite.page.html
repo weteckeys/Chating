@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-button size="small" fill="clear" (click)="goToBack()" slot="start">
+            <ion-icon name="chevron-back"></ion-icon>
+            Back
+        </ion-button>
+        <ion-title>Friends</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        <div style="margin-bottom: 25px">
+            <div class="flex_header" >
+                <ion-label>Invite Friend</ion-label>
+            </div>
+
+            <div class="user_div" *ngFor="let item of users">
+                <div class="user_back" [style.backgroundImage]="'url('+ item +')'"></div>
+                <ion-label class="name_lbl">Jack Owen</ion-label>
+                <ion-button fill="outline" shape="round" size="small">
+                    Invite
+                </ion-button>
+            </div>
+        </div>
+    </div>
+</ion-content>

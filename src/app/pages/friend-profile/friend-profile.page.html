@@ -1,0 +1,58 @@
+<ion-content>
+    <div class="main_content_div">
+        <div class="back_user" [style.backgroundImage]="'url(assets/imgs/user2.jpg)'">
+            <ion-icon name="chevron-back" class="back_icn" (click)="goToBack()"></ion-icon>
+            <div>
+                <ion-label class="username">Katie Brown</ion-label>
+                <ion-label class="location">New York</ion-label>
+            </div>
+        </div>
+        <ion-button shape="round" class="follow_btn">
+          Follow
+        </ion-button>
+
+        <div class="content_div">
+
+            <div class="follow_div">
+                <div class="box_div">
+                    <ion-label class="bold_lbl">250</ion-label>
+                    <ion-label class="grey_lbl">Posts</ion-label>
+                </div>
+                <div class="box_div">
+                    <ion-label class="bold_lbl">300</ion-label>
+                    <ion-label class="grey_lbl">Followers</ion-label>
+                </div>
+                <div class="box_div" style="border: 0;">
+                    <ion-label class="bold_lbl">1250</ion-label>
+                    <ion-label class="grey_lbl">Following</ion-label>
+                </div>
+            </div>
+
+            <div class="card_div" *ngFor="let item of posts">
+                <div class="user_flex">
+                    <div class="user_round" [style.backgroundImage]="'url(assets/imgs/user2.jpg)'"></div>
+                    <div class="user_detail">
+                        <ion-label class="username">Katie Brown</ion-label>
+                        <ion-label class="grey_lbl">@katebrown</ion-label>
+                    </div>
+                    <ion-label class="time_lbl">28 min ago</ion-label>
+                </div>
+                <div class="user_post" [style.backgroundImage]="'url('+ item +')'"></div>
+                <div class="like_flex">
+                    <div class="comment_flex">
+                        <div class="user_comment" [style.backgroundImage]="'url(assets/imgs/user1.jpg)'"></div>
+                        <div class="user_comment" [style.backgroundImage]="'url(assets/imgs/user2.jpg)'"></div>
+                        <div class="user_comment" [style.backgroundImage]="'url(assets/imgs/user3.jpg)'"></div>
+                        <ion-label>24 Comments</ion-label>
+                    </div>
+                    <ion-icon name="heart-outline"></ion-icon>
+                </div>
+            </div>
+
+
+        </div>
+
+        
+
+    </div>
+</ion-content>

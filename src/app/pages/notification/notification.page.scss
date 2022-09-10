@@ -1,0 +1,53 @@
+.main_content_div {
+    width: 100%;
+    padding: 16px;
+
+    ion-label {
+        display: block;
+    }
+
+    .flex_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+
+        ion-label {
+            color: grey;
+            font-size: 14px;
+        }
+    }
+
+    .user_div {
+        border-bottom: 1px solid lightgrey;
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
+
+        .user_back {
+            height: 50px;
+            width: 50px;
+            min-width: 50px;
+            border-radius: 100%;
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .grey_lbl {
+            width: 75%;
+            margin-left: 16px;
+            span {
+                font-family: 'semi-bold';
+            }
+        }
+
+        ion-button {
+            position: absolute;
+            right: -16px;
+            margin: 0;
+        }
+    }
+}

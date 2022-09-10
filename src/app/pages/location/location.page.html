@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="mainConten">
+    <div class="img">
+      <img src="assets/markerGIF.gif" alt="" class="animatedImg">
+    </div>
+    <h2>People Nearby</h2>
+    <p>Quickly add people nearby who are viewing <br>
+      this section and discover local group chats</p>
+    <p>Please switch on location access to enable <br>
+      this feature </p>
+    <ion-button (click)="allow()" expand="block">
+      Allow Access
+    </ion-button>
+  </div>
+</ion-content>

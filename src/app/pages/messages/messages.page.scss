@@ -1,0 +1,66 @@
+.main_content_div {
+    width: 100%;
+    padding: 16px;
+
+    ion-label {
+        display: block;
+    }
+
+    .title_lbl {
+        font-size: 26px;
+        font-family: 'semi-bold';
+    }
+
+    .user_div {
+        border-bottom: 1px solid lightgrey;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        position: relative;
+
+        .user_back {
+            height: 45px;
+            width: 45px;
+            min-width: 45px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 100%;
+            position: relative;
+
+            .online {
+                height: 10px;
+                width: 10px;
+                border-radius: 100%;
+                background: #5ECA7A;
+                position: absolute;
+                right: 0px;
+            }
+        }
+
+        .user_detail {
+            padding-left: 10px;
+
+            .name_lbl {
+                font-family: 'semi-bold';
+                font-size: 15px;
+                color: var(--ion-color-primary);
+            }
+            .msg_lbl {
+                font-size: 13px;
+            }
+        }
+        .abs_lbl {
+            position: absolute;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        .time_lbl {
+            font-size: 13px;
+            color: grey;
+        }
+    }
+}

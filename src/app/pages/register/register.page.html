@@ -1,0 +1,38 @@
+<ion-content>
+  <div class="main_content_div">
+
+      <div class="header_flex">
+          <ion-button (click)="goToBack()" size="small" fill="clear">
+            <ion-icon name="chevron-back"></ion-icon>
+            Back
+          </ion-button>
+          <ion-button fill="clear" size="small">
+            Skip
+          </ion-button>
+      </div>
+
+      <ion-label class="bold_lbl">Create Account</ion-label>
+      <ion-label class="small_lbl">and start meeting new friends <br> around the worlds</ion-label>
+
+      <ion-input type="text" placeholder="Username">
+          <ion-icon name="person"></ion-icon>
+      </ion-input>
+
+      <ion-input type="text" placeholder="Email">
+          <ion-icon name="mail"></ion-icon>
+      </ion-input>
+
+      <ion-input type="text" placeholder="Password">
+          <ion-icon name="key"></ion-icon>
+      </ion-input>
+
+      <ion-button expand="block" (click)="goToVerify()">
+        Sign Up
+      </ion-button>
+
+      <ion-label class="forgot_lbl">Terms of use & Privacy Policy</ion-label>
+
+      <ion-label class="abs_lbl" (click)="goToLogin()">Already have an account ? Log in</ion-label>
+
+  </div>
+</ion-content>

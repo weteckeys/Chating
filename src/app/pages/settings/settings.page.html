@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Settings</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        <ion-label class="title_lbl">Settings</ion-label>
+
+        <div class="list-item" (click)="goToInvite()">
+            <ion-icon slot="start" name="people-outline"></ion-icon>
+            <ion-label>Invite Friends</ion-label>
+        </div>
+
+        <div class="list-item" (click)="goToNotificaion()">
+            <ion-icon slot="start" name="notifications-outline"></ion-icon>
+            <ion-label>Notification</ion-label>
+        </div>
+
+        <div class="list-item" (click)="goToPrivacy()">
+            <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+            <ion-label>Privacy</ion-label>
+        </div>
+
+        <div class="list-item" (click)="openLocation()">
+            <ion-icon slot="start" name="location-outline"></ion-icon>
+            <ion-label>Location</ion-label>
+        </div>
+
+        <div class="list-item" (click)="goToAccount()">
+            <ion-icon slot="start" name="person-outline"></ion-icon>
+            <ion-label>Account</ion-label>
+        </div>
+
+        <div class="list-item" (click)="goToTerms()">
+            <ion-icon slot="start" name="shield-checkmark-outline"></ion-icon>
+            <ion-label>Terms & Policies</ion-label>
+        </div>
+
+        <div class="list-item" (click)="logout()">
+            <ion-icon slot="start" name="power-outline"></ion-icon>
+            <ion-label>Logout</ion-label>
+        </div>
+
+    </div>
+</ion-content>

@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button mode="md"></ion-back-button>
+    </ion-buttons>
+    <ion-title>People Nearby</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="topSection">
+    <div class="img">
+      <img src="assets/markerGIF.gif" alt="" class="animatedImg">
+    </div>
+    <p>Ask your friend nearby to open this page <br>
+      to exchange phone numbers.</p>
+  </div>
+  <div class="nearYou">
+    <p class="title">
+      People nearby
+    </p>
+    <div class="list_div" *ngFor="let item of avatars" (click)="goToInbox(item)">
+      <div class="user_image" *ngIf="item.img" [style.backgroundImage]="'url('+item.img+')'"></div>
+      <app-text-avatar *ngIf="!item.img" [text]="item.title" color="#0088CC"></app-text-avatar>
+      <div class="content_div">
+        <ion-label class="username">{{item.name}}</ion-label>
+        <ion-label class="msg">1.2 km away</ion-label>
+      </div>
+    </div>
+  </div>
+  <div class="nearYou">
+    <p class="title">
+      Groups nearby
+    </p>
+    <div class="list_div" *ngFor="let item of users" (click)="goToInbox(item)">
+      <div class="user_image" *ngIf="item.img" [style.backgroundImage]="'url('+item.img+')'"></div>
+      <app-text-avatar *ngIf="!item.img" [text]="item.title" color="#0088CC"></app-text-avatar>
+      <div class="content_div">
+        <ion-label class="username">{{item.title}}</ion-label>
+        <ion-label class="msg">323 m away , 6 members</ion-label>
+      </div>
+    </div>
+  </div>
+</ion-content>

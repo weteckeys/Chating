@@ -1,0 +1,65 @@
+.main_content_div {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    ion-label {
+        display: block;
+    }
+
+    .back_image {
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .bold_lbl {
+        font-size: 24px;
+        font-family: 'semi-bold';
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .small_lbl {
+        font-size: 14px;
+        color: grey;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .user_flex {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .user_back {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+        }
+    }
+
+    ion-button {
+        margin: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .fb_btn {
+        --background: #C8C7CD;
+    }
+}

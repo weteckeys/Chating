@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-button size="small" fill="clear" (click)="goToBack()" slot="start">
+            <ion-icon name="chevron-back"></ion-icon>
+            Back
+        </ion-button>
+        <ion-title>Friends</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+      
+      <div style="margin-bottom: 25px" *ngIf="value == 1">
+          <div class="flex_header" >
+              <ion-label>Friend Request</ion-label>
+          </div>
+
+          <div class="user_div" *ngFor="let item of users">
+              <div class="user_back" [style.backgroundImage]="'url('+ item +')'"></div>
+              <div class="user_detail">
+                  <ion-label class="name_lbl">Jack Owen</ion-label>
+                  <ion-label class="grey_lbl">10 mutual friends</ion-label>
+              </div>
+              <div class="action_div">
+                  <ion-icon name="checkmark-circle" class="check_icn"></ion-icon>
+                  <ion-icon name="close-circle" class="close_icn"></ion-icon>
+              </div>
+          </div>
+      </div>
+
+      <div style="margin-bottom: 25px;" *ngIf="value == 2">
+          <div class="flex_header">
+              <ion-label>Suggest Friends</ion-label>
+          </div>
+  
+          <div class="user_div" *ngFor="let item of users">
+              <div class="user_back" [style.backgroundImage]="'url('+ item +')'"></div>
+              <div class="user_detail">
+                  <ion-label class="name_lbl">Jack Owen</ion-label>
+                  <ion-label class="grey_lbl">10 mutual friends</ion-label>
+              </div>
+              <ion-button fill="outline" shape="round" size="small">
+                  Follow
+              </ion-button>
+          </div>
+      </div>
+
+  </div>
+</ion-content>

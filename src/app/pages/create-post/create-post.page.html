@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-button size="small" fill="clear" (click)="goToBack()" slot="start">
+            <ion-icon name="chevron-back"></ion-icon>
+            Back
+        </ion-button>
+        <ion-title>Create Post</ion-title>
+        <ion-button fill="clear" size="small" slot="end">
+          Post
+        </ion-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+      <ion-input type="text" placeholder="Title"></ion-input>
+      <ion-textarea autoGrow="true" placeholder="Write something here.."></ion-textarea>
+    </div>
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="flex_header">
+            <div class="user_back" [style.backgroundImage]="'url(assets/imgs/user1.jpg)'"></div>
+            <ion-label>Kely West</ion-label>
+            <ion-icon name="close" (click)="close()"></ion-icon>
+        </div>
+
+        <div class="content_div" [style.height]="screenHeight+'px'">
+            <div class="user_div" *ngFor="let item of comments">
+                <div class="back_user" [style.backgroundImage]="'url('+ item.user +')'"></div>
+                <div class="user_detail">
+                    <ion-label class="username">Larry</ion-label>
+                    <ion-label class="comment_lbl">{{item.text}}</ion-label>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_div">
+            <ion-input type="text" placeholder="Type a comment"></ion-input>
+            <div class="send_btn">
+                <ion-icon name="send-sharp"></ion-icon>
+            </div>
+        </div>
+
+    </div>
+</ion-content>

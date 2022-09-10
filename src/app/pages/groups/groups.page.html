@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-button size="small" fill="clear" (click)="goToBack()" slot="start">
+            <ion-icon name="chevron-back"></ion-icon>
+            Back
+        </ion-button>
+        <ion-title>Groups</ion-title>
+        <ion-button fill="clear" size="small" slot="end">
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+        </ion-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        <ion-row>
+            <ion-col size="6" *ngFor="let item of groups">
+                <div class="main_div">
+                    <div class="icn_div">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </div>
+                    <div class="user_back" [style.backgroundImage]="'url('+ item.img +')'"></div>
+                    <ion-label class="bold_lbl">{{item.name}}</ion-label>
+                    <ion-label class="small_lbl">45 Members</ion-label>
+                </div>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-content>

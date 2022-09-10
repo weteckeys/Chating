@@ -1,0 +1,46 @@
+.main_content_div {
+    width: 100%;
+    padding: 16px;
+
+    ion-label {
+        display: block;
+    }
+
+    .flex_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+
+        ion-label {
+            font-size: 20px;
+            font-family: 'semi-bold';
+        }
+    }
+
+    .user_div {
+        border-bottom: 1px solid lightgrey;
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
+
+        .user_back {
+            height: 45px;
+            width: 45px;
+            border-radius: 100%;
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .name_lbl {
+            font-family: 'semi-bold';
+            margin-left: 10px;
+        }
+        ion-button {
+            position: absolute;
+            right: 0;
+        }
+    }
+}

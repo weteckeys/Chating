@@ -1,0 +1,40 @@
+ion-content {
+    --background: linear-gradient(to bottom, var(--ion-color-primary), #F6B5AC);
+}
+.main_content_div {
+    width: 100%;
+    padding: 20px;
+
+    ion-label {
+        display: block;
+    }
+    
+    .back_icn {
+        margin-top: 40px;
+        color: white;
+        font-size: 30px;
+    }
+
+    .bold_lbl {
+        font-size: 24px;
+        color: white;
+        font-family: 'semi-bold';
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .small_lbl {
+        font-size: 14px;
+        color: white;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    ion-button {
+        margin: 0px;
+        --background: white;
+        color: black;
+        --border-radius: 5px;
+        margin-top: 40px;
+    }
+
+}

@@ -1,0 +1,128 @@
+.main_content_div {
+    width: 100%;
+
+    ion-label {
+        display: block;
+    }
+
+    .user_cover {
+        width: 100%;
+        height: 270px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .icn_div {
+            margin-top: 40px;
+            display: flex;
+            justify-content: flex-end;
+            ion-icon {
+                color: white;
+
+            }
+        }
+
+        .user_div {
+            display: flex;
+            align-items: center;
+
+            .user_back {
+                height: 60px;
+                width: 60px;
+                border-radius: 100%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .user_detail {
+                padding-left: 16px;
+    
+                .name_lbl {
+                    font-size: 20px;
+                    font-family: 'semi-bold';
+                    color: white;
+                }
+                .loc_lbl {
+                    font-size: 14px;
+                    color: white;
+                }
+    
+                .user_flex {
+                    display: flex;
+
+                    .detail_div {
+                        margin-right: 16px;
+
+                        .bold_lbl {
+                            font-family: 'semi-bold';
+                            color: white;
+                            font-size: 15px;
+                        }
+    
+                        .small_lbl {
+                            color: white;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content_div {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+
+        .card_div {
+            margin-bottom: 16px;
+
+            .user_detail {
+                display: flex;
+                margin-bottom: 10px;
+                .user_back {
+                    height: 40px;
+                    width: 40px;
+                    min-width: 40px;
+                    border-radius: 50%;
+                    background-position: top;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .user_detail_info {
+                    padding-left: 10px;
+
+                    .bold_lbl {
+                        font-family: 'semi-bold';
+                        font-size: 15px;
+                    }
+                    .grey_lbl {
+                        color: grey;
+                        font-size: 13px;
+                    }
+                }
+
+                .abs_icn {
+                    position: absolute;
+                    right: 16px;
+                    color: lightgrey;
+                }
+            }
+            .user_post {
+                width: 100%;
+                height: 200px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                margin-left: 50px;
+            }
+        }
+    }
+}

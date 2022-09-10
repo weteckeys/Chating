@@ -1,0 +1,65 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Friends</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        <div class="flex_header">
+            <ion-label>Friend Request</ion-label>
+            <ion-label (click)="goToAllFriends(1)">Show All</ion-label>
+        </div>
+
+        <div style="margin-bottom: 25px">
+            <div class="user_div" *ngFor="let item of (users | slice: 0: 3)" (click)="goToFriendProfile()">
+                <div class="user_back" [style.backgroundImage]="'url('+ item +')'"></div>
+                <div class="user_detail">
+                    <ion-label class="name_lbl">Jack Owen</ion-label>
+                    <ion-label class="grey_lbl">10 mutual friends</ion-label>
+                </div>
+                <div class="action_div">
+                    <ion-icon name="checkmark-circle" class="check_icn"></ion-icon>
+                    <ion-icon name="close-circle" class="close_icn"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <div class="flex_header">
+                <ion-label>Suggest Friends</ion-label>
+                <ion-label (click)="goToAllFriends(2)">Show All</ion-label>
+            </div>
+    
+            <div class="user_div" *ngFor="let item of (users | slice: 0: 3)" (click)="goToFriendProfile()">
+                <div class="user_back" [style.backgroundImage]="'url('+ item +')'"></div>
+                <div class="user_detail">
+                    <ion-label class="name_lbl">Jack Owen</ion-label>
+                    <ion-label class="grey_lbl">10 mutual friends</ion-label>
+                </div>
+                <ion-button fill="outline" shape="round" size="small">
+                    Follow
+                </ion-button>
+            </div>
+        </div>
+
+        
+
+        <div class="flex_header">
+            <ion-label>Suggest Groups</ion-label>
+            <ion-label (click)="goToGroups()">Show All</ion-label>
+        </div>
+
+        <div class="user_div" *ngFor="let item of groups">
+            <div class="user_back" [style.backgroundImage]="'url('+ item.img +')'"></div>
+            <div class="user_detail">
+                <ion-label class="name_lbl">{{item.name}}</ion-label>
+                <ion-label class="grey_lbl">10 Members</ion-label>
+            </div>
+            <ion-button fill="outline" shape="round" size="small">
+                Join
+            </ion-button>
+        </div>
+
+    </div>
+</ion-content>

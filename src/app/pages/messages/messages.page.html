@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Messages</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        <ion-label class="title_lbl">Messages</ion-label>
+        
+        <div class="user_div" *ngFor="let item of users; let i = index" (click)="goToChatDetail()">
+            <div class="user_back" [style.backgroundImage]="'url('+ item +')'">
+                <div class="online" *ngIf="i == 0 || i== 2 || i == 6"></div>
+            </div>
+            <div class="user_detail">
+                <ion-label class="name_lbl">Jonh Doe</ion-label>
+                <ion-label class="msg_lbl">Hi...</ion-label>
+            </div>
+            <div class="abs_lbl">
+                <ion-label class="time_lbl">23 min</ion-label>
+                <ion-badge color="primary" mode="ios" *ngIf="i == 0 || i== 3">42</ion-badge>
+            </div>
+        </div>
+
+    </div>
+</ion-content>

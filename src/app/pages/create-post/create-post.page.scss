@@ -1,0 +1,17 @@
+.main_content_div {
+    width: 100%;
+    padding: 16px;
+
+    ion-input {
+        border-bottom: 1px solid lightgrey;
+        margin-bottom: 10px;
+        font-family: 'semi-bold';
+        font-size: 20px;
+    }
+
+    ion-textarea {
+        overflow: scroll;
+        // border: 1px solid;
+        font-family: 'regular';
+    }
+}
